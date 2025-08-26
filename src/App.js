@@ -130,36 +130,4 @@ function App() {
   return (
     //öll reiknivelin
     <div className="calculator-grid">
-      {/*gluggi sem birtir tölurnar*/}
-      <div className='output'>
-        {/*birtir fyrstu tölu og tákn fyrir ofan*/}
-        <div className='previous-operend'>{formatOperand(previousOperand)} {operation}</div>
-        <div className='current-operend'>{formatOperand(currentOperand)}</div>
-      </div>
-      <button className='span-two' onClick={() => dispatch({type: ACTIONS.CLEAR})}>AC</button>
-      <button onClick={() => dispatch({type: ACTIONS.DELETE_DIGIT})}>DEL</button>
-      <OperationButton operation="÷" dispatch={dispatch}></OperationButton>
-
-      <DigitButton digit="7" dispatch={dispatch}></DigitButton>
-      <DigitButton digit="8" dispatch={dispatch}></DigitButton>
-      <DigitButton digit="9" dispatch={dispatch}></DigitButton>
-      <OperationButton operation="*" dispatch={dispatch}></OperationButton>
-
-      <DigitButton digit="4" dispatch={dispatch}></DigitButton>
-      <DigitButton digit="5" dispatch={dispatch}></DigitButton>
-      <DigitButton digit="6" dispatch={dispatch}></DigitButton>
-      <OperationButton operation="-" dispatch={dispatch}></OperationButton>
-
-      <DigitButton digit="1" dispatch={dispatch}></DigitButton>
-      <DigitButton digit="2" dispatch={dispatch}></DigitButton>
-      <DigitButton digit="3" dispatch={dispatch}></DigitButton>
-      <OperationButton operation="+" dispatch={dispatch}></OperationButton>
-  
-      <DigitButton digit="0" dispatch={dispatch}></DigitButton>
-      <DigitButton digit="." dispatch={dispatch}></DigitButton>
-      <button className='span-two' onClick={() => dispatch({type: ACTIONS.EVALUATE})}>=</button>
-    </div>
-  );
-}
-
-export default App;
+      {/*gluggi sem 
